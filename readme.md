@@ -20,7 +20,7 @@ Change the name of your application in the file 'app.json'.
 ```
 > Don't use 'com.' in the name field (package name), because it will automatically be added when you do the next configuration.
 
-After changing the information in 'app.json', make sure `android` & `ios` has been deleted or not generated previously.
+After changing the information in `/app.json`, make sure `android` & `ios` has been deleted or not generated previously.
 Then run following command:
 ```shell script
 react-native eject
@@ -62,6 +62,84 @@ export const FontType = {
 After configuring the above, run the following command to link the fonts to the fonts folder in the android & ios directory:
 ```shell script
 react-native link
+```
+
+## Project Structure
+Here is the project directory structure tree:
+```
+/
+|-- android
+|-- ios
+|-- app
+    |-- Assets
+        |-- Images
+        |-- Fonts
+    |-- Components
+        |-- index.js
+    |-- Constants
+    |-- Features
+    |-- I18n
+        |-- en-EN.json
+        |-- id-ID.json
+    |-- Redux
+        |-- index.js
+        |-- Reducers.js
+        |-- Store.js
+    |-- Router
+        |-- Navigator
+        |-- BaseApp.js
+        |-- Routes.js
+        |-- Navigation.config.js
+        |-- Screen.config.js
+    |-- Themes
+        |-- Images.js
+        |-- Colors.js
+        |-- Fonts.js
+        |-- Icons.js
+        |-- index.js
+    |-- Types
+    |-- Utils
+|-- app.json
+|-- index.js
+```
+
+#### Add new feature
+Before you create a new feature, create a directory structure with a sample like this:
+```
+Features
+|-- MyFeature
+    |-- Compoenents
+        |-- YourComponents.component.js
+        |-- YourComponents.style.js
+    |-- Screens
+        |-- YourFeature.screen.component.js
+        |-- YourFeature.screen.style.js
+    |-- MyFeature.container.js
+    |-- MyFeature.reducer.js
+    |-- MyFeature.actions.js
+```
+Then don't forget to register your screen at `Screen.config.js`, then don't forget to register your screen in Screen.config.js and the navigation components in the `./Router/Navigator/` directory.
+
+#### Add new components
+Here's the folder structure of a global component in your project:
+```
+Components
+|-- YourComponents
+    |-- YourComponents.component.js
+    |-- YourComponents.style.js
+|-- index.js    <-- regist your component on this file
+```
+
+#### Add new assets (images or icons)
+Put your image files in the directory `./app/Assets/Images`, then don't forget to register your assets in the files available on the Themes.
+```
+/
+|-- Assets      <-- put your image/icons asset here
+    |-- Images 
+    |-- Icons 
+|-- Themes      <-- link/import your assets here
+    |-- Images.js
+    |-- Icons.js
 ```
 
 ## Contributing
