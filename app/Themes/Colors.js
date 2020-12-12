@@ -1,0 +1,17 @@
+export default {
+  BLACK: 'rgb(0,0,0)',
+  NEW_HUSK: 'rgb(212,193,139)',
+  HUSK: 'rgb(173,151,79)',
+  CORN_HARVEST: 'rgb(142,121,62)',
+  AUBERGINE: 'rgb(35,31,32)',
+  BROWNISH_GREY: 'rgb(95,95,95)',
+  BROWNISH_GREY_TWO: 'rgb(102,102,102)',
+  MONGOOSE_GRAY: 'rgb(200,194,179)',
+  MONGOOSE_GRAY_2: 'rgb(214,210,197)',
+  HINT_OF_PENSIVE: 'rgb(220,221,225)',
+  WHISPER: 'rgb(234,234,234)',
+  WHITE: 'rgb(255,255,255)',
+  FOREST_GREEN: 'rgb(34,139,34)',
+  PERSIAN_RED: 'rgb(208,48,45)',
+  TRANSPARENT_GREY: 'rgba(198,191,172,0.1)'
+};
