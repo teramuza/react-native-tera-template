@@ -28,6 +28,7 @@ build/
 .gradle
 local.properties
 *.iml
+*.hprof
 
 # node.js
 #
@@ -61,3 +62,9 @@ buck-out/
 #ENV
 #
 .env
+
+# Android dir (remove if you want to use this template)
+android
+
+# IOS dir (remove if you want to use this template)
+ios
