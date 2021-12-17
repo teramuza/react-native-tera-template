@@ -1,7 +1,7 @@
-# DEPRECATED
-Jfrog sunset Bintray, a new repo will be created with the latest rn update that no longer uses Bintray.
+## ⛔️ DEPRECATED ⛔️
+Jfrog sunset Bintray, a new repo will be created with the latest rn update that no longer uses Bintray. See more : https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter/
 
-## React Native Tera's Template 
+# React Native Tera's Template 
 
 React Native template with Tera's configuration, ready to use.
 
