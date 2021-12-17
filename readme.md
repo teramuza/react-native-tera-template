@@ -1,4 +1,7 @@
-# React Native Tera's Template 
+# DEPRECATED
+Jfrog sunset Bintray, a new repo will be created with the latest rn update that no longer uses Bintray.
+
+## React Native Tera's Template 
 
 React Native template with Tera's configuration, ready to use.
 
